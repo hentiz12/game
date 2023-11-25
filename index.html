@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		
+	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="body">
+	<div class="box">
+		<h1>Очки: <span class="pointer">0</span> </h1>
+		<h1 class="snickers">Сникерс</h1>
+		<h1 class="sychnak">Сушняк</h1>
+		<h1 class="gorshok">Голубь Горшок</h1>
+		<h1 class="gorilla">Горилла</h1>
+	</div>
+
+	<div class="target1">
+		
+	</div>
+	<div class="target2">
+		
+	</div>
+	<div class="target3">
+		
+	</div>
+	<div class="target4">
+		
+	</div>
+
+	<script type="text/javascript">
+		let score = 0;
+
+		document.querySelector(".target1").onclick= function() {
+		
+			score = score + 1;
+			document.querySelector(".pointer").innerHTML = score;
+			document.querySelector(".target1").style.display = "none"
+			document.querySelector(".snickers").style.textDecoration = "line-through";
+
+			alert("Я нашел сникерс")
+		}
+		document.querySelector(".target2").onclick= function() {
+		
+			score = score + 1;
+			document.querySelector(".pointer").innerHTML = score;
+			document.querySelector(".target2").style.display = "none"
+			document.querySelector(".sychnak").style.textDecoration = "line-through";
+
+			alert("Я нашел сушняк")
+		}
+		document.querySelector(".target3").onclick= function() {
+		
+			score = score + 1;
+			document.querySelector(".pointer").innerHTML = score;
+			document.querySelector(".target3").style.display = "none"
+			document.querySelector(".gorshok").style.textDecoration = "line-through";
+
+			alert("Я нашел горшок")
+		}
+		document.querySelector(".target4").onclick= function() {
+		
+			score = score + 1;
+			document.querySelector(".pointer").innerHTML = score;
+			document.querySelector(".target4").style.display = "none"
+			document.querySelector(".gorshok").style.textDecoration = "line-through";
+
+			alert("Я нашел гориллу")
+		}
+
+	</script>
+</body>
+</html>
